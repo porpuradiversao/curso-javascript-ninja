@@ -4,29 +4,44 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+function somadosmesmos( x, y ) {
+return x + y;
+}
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+
+function a( x, y ) {
+return x + y
+}
+undefined
+var aaa = a( 3, 3 ) + 5;
+undefined
+aaa
+11
 
 // Qual o valor atualizado dessa variável?
-?
+11
 
 // Declare uma nova variável, sem valor.
-?
+var z;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
-
+function addvalor() {
+z = 90
+return ' O valor da variavel agora é ' + z;
+}
+undefined
+                                
 // Invoque a função criada acima.
-?
+addvalor()
+'O valor da variavel agora é 90'
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+/* 'O valor da variavel agora é 90' */
 
 /*
 Crie uma função com as seguintes características:
@@ -35,7 +50,11 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function kaka( x, y, e ) {
+if( x  === undefined || y === undefined || e === undefined ){
+return 'Preencha os valores corretamente';
+} return ( x * y * e ) + 2;
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
 ?
