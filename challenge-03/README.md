@@ -49,7 +49,7 @@ booleano que representa "verdadeiro";
 pessoa.andar = function(metros) {
     pesssoa.caminhouQuantosMetros += metros;
     pessoa.andando = true;
-
+};
 /*
 Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
 da propriedade `andando` para o valor booleano que representa "falso".
@@ -199,8 +199,8 @@ pessoa.apresentacao = function() {
     }
     
     return 'Olá, eu sou ' + sexo + ' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + idadeAnos + ', ' + pessoa.andando + ', meu peso é ' + pessoa.peso + ' e, só hoje, eu já caminhei ' + pessoa.caminhouQuantosMetros + ' ' + oqandei + '!
-    };
+    }
+   };
 
 // Agora, apresente-se ;)
-?
-```
+pessoa.apresentacao();
