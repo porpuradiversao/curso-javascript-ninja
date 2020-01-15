@@ -57,16 +57,16 @@ return 'Preencha os valores corretamente';
 }
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+kaka(1, 2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+/* Preencha os valores corretamente */
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+kaka(1, 2, 3);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+//8
 
 /*
 Crie uma função com as seguintes características:
@@ -77,8 +77,24 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+function meh(a, b, c) {
+if( a !== undefined && b === undefined && c === undefined ) {
+return a;
+} else if( a !== undefined && b !== undefined && c === undefined ) {
+return a + b;
+} else if ( a !== undefined && b !== undefined && c !== undefined ) {
+return ( a + b ) / c;
+} else if ( a === undefined && b === undefined && c === undefined ) {
+return false;
+} else {
+return null;
+ }
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+meh(); // false
+meh(3); // 3
+meh(3,2); // 5
+meh(4,4,2); // 4
+
 ```
